@@ -9,7 +9,7 @@ body {
     background-color: black;
 }
 
-.container {
+.barra {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -36,35 +36,74 @@ header nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 2rem 0;
+#conteudo {
     color: white;
-}
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px; 
+    float: left;
+    margin: 10px;
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
-    color: white;
-    
 }
-
-.item {
-    border: 1px solid #ccc;
-    padding: 1rem;
-}
-
-.item img {
-    width: 100%;
-    height: auto;
-}
-
 footer {
     background-color: white;
     color: black;
-    padding: 1rem 0;
+   padding: 1rem;
     text-align: center;
 }
 
+.home {
+    text-align: center;
+    background-color:white;
+    color: black;
+}
+
+.img-container {
+    padding: 10px;
+    
+}
 
 
+/* a partir desse segmento tudo se refere ao sobre*/
+.container1 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+    padding: 40px;
+    
+}
+
+.texto {
+    flex: 1; /* texto do sobre*/
+}
+
+img {
+    max-width: 50%; /* referente a imagem do sobre*/
+    height: auto; /* referente a imagem do sobre*/
+    
+}
+
+/* a partir desse segmento tudo se refere ao audiovisual*/
+.video-container {
+    margin-bottom: 20px;
+}
+.video-caption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+    padding-right: 60px;
+    
+}
